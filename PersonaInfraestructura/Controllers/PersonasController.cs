@@ -38,7 +38,7 @@ namespace PersonaInfraestructura.Controllers
 
 
         //PUT: api/Personas/5
-        [HttpPut("{♥id}")]
+        [HttpPut("{id}")]
         public IActionResult PutPersona(int id, Persona newPersonaRecords)
         {
             if (newPersonaRecords.PerdonsaID != id) return BadRequest(ModelState);

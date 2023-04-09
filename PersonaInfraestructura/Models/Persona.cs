@@ -5,7 +5,6 @@ namespace PersonaInfraestructura.Models
 
     public class Persona
     {
-        [Key]
         public int PerdonsaID { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }

@@ -2,7 +2,8 @@ using PersonaInfraestructura.Sevices;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddScoped<IPersonaServices, PersonaServices>();
+builder.Services.AddScoped<IPersonaServices,PersonaServices>();
+
 // Add services to the container.
 
 builder.Services.AddControllers();

@@ -24,8 +24,8 @@ namespace PersonaInfraestructuraTest
         {
 
             //act
-             var result = _controller.GetPersonas();
-            
+            var result = _controller.GetPersonas();
+
             //assert
             Assert.IsType<OkObjectResult>(result);
 
@@ -35,9 +35,9 @@ namespace PersonaInfraestructuraTest
         [Fact]
         public void GetPersonas_Expected_ListPersona()
         {
-          
+
             //act
-            var result =(OkObjectResult) _controller.GetPersonas();
+            var result = (OkObjectResult)_controller.GetPersonas();
 
             //assert
             var ListaPersona = Assert.IsType<List<Persona>>(result.Value);
